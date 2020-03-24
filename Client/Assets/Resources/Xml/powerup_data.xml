@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--explanation of columns
+All values in this table 'add' to the player's stats except for attack speed(lower is faster)
+
+heal percentage is 10% by default
+
+-->
+
+<PowerUpData>
+	<PowerUps>
+        <PowerUp id="1" multi_pick = "10" power_name= "attack up" sprite= "pu_attack_up" power_desc = "Attack power increased" atk_inc="20" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" rage="0" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="2" multi_pick = "10" power_name= "attack speed up" sprite= "pu_attack_speed_up" power_desc = "Attack speed increased" atk_inc="0" atk_spd_inc = "10" crit_inc="0" hp_inc="0" heal_perc="0" rage="0" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="3" multi_pick = "10" power_name= "crit up" sprite= "pu_crit_up" power_desc = "% Crit chance increased" atk_inc="0" atk_spd_inc = "0" crit_inc="5" hp_inc="0" heal_perc="0" rage="0" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="4" multi_pick = "10" power_name= "max hp up" sprite= "pu_max_health_up" power_desc = "Max HP increased" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="10" heal_perc="0" rage="0" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="5" multi_pick = "10" power_name= "strong heart" sprite= "pu_strong_heart" power_desc = "Heal more HP everytime" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="5" rage="0" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="6" multi_pick = "0" power_name= "rage" sprite= "pu_rage" power_desc = "Damage increases as HP decreases" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" rage="1" bloodthirst="0" invincible="0" smart="0"/>
+        <PowerUp id="7" multi_pick = "0" power_name= "bloodthirst" sprite= "pu_bloodthirst" power_desc = "Regain some Hp with every kill" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" rage="0" bloodthirst="1" invincible="0" smart="0"/>
+        <PowerUp id="8" multi_pick = "0" power_name= "invincible" sprite= "pu_invincible" power_desc = "Invincible for a short time" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" rage="0" bloodthirst="0" invincible="3" smart="0"/>
+        <PowerUp id="9" multi_pick = "0" power_name= "smart" sprite= "pu_smart" power_desc = "XP Boost" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" rage="0" bloodthirst="0" invincible="0" smart="1"/>
+	</PowerUps>
+</PowerUpData>
+ 

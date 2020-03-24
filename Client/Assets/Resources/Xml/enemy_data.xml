@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--explanation of columns
+ID = enemy character ID
+name = enemy name
+hp = max health
+atk = attack power
+moving_value = total distance with each move
+moving_type = set enemy character's moving. 0 = none (cannot move), 1 = random, 2  = chasing player, 3 = vertical patrol, 4 = horizontal patrol 10 = slow patrol
+atk_type = enemy's attack type. 0 = crash, 1 = projectile 
+weapon = weapon type. 0 = none (when you use, if its atk type is crash), 100 = laser1, 101 = laser2, 102 = laser3 ......, 200 = missile1, 201 = missile2, 202 = missile3 ..... (i know we have the only one resource to use a projectile. so, please designate ID 100 or 200 as a dummy)
+atk_spd = attack speed. if you enter 100 in this column, the enemy attacks one time per a second
+target_delay = delay to attack after target designation. if you enter 100 in this column, the enemy attacks where player was a second ago.
+atk_range = attack range(float for increased variance)
+exp = amount of exp that enemy drops after it dies
+sprite = the enemy character's image resource (file name)
+size = scale of the enemy. if you enter 200 in this column, it must be displayed twice as big in game
+ability = special ability the enemy has. (ex. snake = hide) 1 = cone projectile
+
+   
+-->
+<EnemyData>
+	<Enemies>
+        <Enemy id="1" name="chicken" hp="40" atk="10" moving_type="0" moving_value="0" moving_speed="0" moving_delay="150" atk_type="1" weapon="1" shots = "1" atk_spd="50" target_delay="100" atk_range="50" exp="50" reward="25" hp_reward="1" size="100" move_ability="none" shoot_ability="burst" sprite="cha_10"/>
+        <Enemy id="2" name="chicken" hp="80" atk="15" moving_type="0" moving_value="0" moving_speed="0" moving_delay="150" atk_type="1" weapon="2" shots = "2" atk_spd="20" target_delay="20" atk_range="50" exp="25" reward="30" hp_reward="2" size="100" move_ability="none" shoot_ability="burst" sprite="cha_10"/>
+        <Enemy id="3" name="chicken" hp="1500" atk="20" moving_type="0" moving_value="0" moving_speed="0" moving_delay="150" atk_type="1" weapon="3" shots = "3" atk_spd="100" target_delay="100" atk_range="50" exp="35" reward="40" hp_reward="4" size="100" move_ability="none" shoot_ability="burst" sprite="cha_10"/>
+        
+        <Enemy id="4" name="chicken" hp="70" atk="15" moving_type="1" moving_value="10" moving_speed="12" moving_delay="100" atk_type="1" weapon="1" shots = "2" atk_spd="50" target_delay="100" atk_range="50" exp="40" reward="40" hp_reward="6" size="100" move_ability="none" shoot_ability="burst" sprite="cha_1110"/>
+        <Enemy id="5" name="chicken" hp="110" atk="20" moving_type="1" moving_value="15" moving_speed="14" moving_delay="150" atk_type="1" weapon="2" shots = "3" atk_spd="50" target_delay="100" atk_range="50" exp="50" reward="50" hp_reward="8" size="100" move_ability="none" shoot_ability="burst" sprite="cha_1110"/>
+        <Enemy id="6" name="chicken" hp="160" atk="25" moving_type="1" moving_value="20" moving_speed="16" moving_delay="200" atk_type="1" weapon="3" shots = "4" atk_spd="50" target_delay="100" atk_range="50" exp="60" reward="60" hp_reward="10" size="100" move_ability="none" shoot_ability="burst" sprite="cha_1110"/>
+                
+        <Enemy id="7" name="chicken" hp="60" atk="15" moving_type="1" moving_value="10" moving_speed="12" moving_delay="100" atk_type="1" weapon="1" shots = "2" atk_spd="50" target_delay="100" atk_range="50" exp="40" reward="40" hp_reward="6" size="100" move_ability="fly" shoot_ability="burst" sprite="cha_1210"/>
+        <Enemy id="8" name="chicken" hp="120" atk="20" moving_type="1" moving_value="15" moving_speed="14" moving_delay="100" atk_type="1" weapon="2" shots = "3" atk_spd="50" target_delay="100" atk_range="50" exp="50" reward="50" hp_reward="8" size="100" move_ability="fly" shoot_ability="burst" sprite="cha_1210"/>
+        <Enemy id="9" name="chicken" hp="2000" atk="25" moving_type="1" moving_value="20" moving_speed="16" moving_delay="100" atk_type="1" weapon="3" shots = "4" atk_spd="50" target_delay="100" atk_range="50" exp="60" reward="60" hp_reward="10" size="100" move_ability="fly" shoot_ability="burst" sprite="cha_1210"/>
+        
+        <Enemy id="10" name="pig" hp="60" atk="10" moving_type="0" moving_value="5" moving_speed="5" moving_delay="100" atk_type="1" weapon="40" shots = "1" atk_spd="100" target_delay="150" atk_range="50" exp="25" reward="20" hp_reward="4" size="100" move_ability="none" shoot_ability="cone" sprite="cha_12"/>
+        <Enemy id="11" name="pig" hp="100" atk="20" moving_type="1" moving_value="10" moving_speed="5" moving_delay="200" atk_type="1" weapon="40" shots = "1" atk_spd="50" target_delay="50" atk_range="50" exp="35" reward="30" hp_reward="6" size="100" move_ability="none" shoot_ability="cone" sprite="cha_12"/>
+        <Enemy id="12" name="pig" hp="140" atk="30" moving_type="1" moving_value="5" moving_speed="5" moving_delay="100" atk_type="1" weapon="40" shots = "1" atk_spd="200" target_delay="100" atk_range="50" exp="45" reward="40" hp_reward="8" size="100" move_ability="none" shoot_ability="cone" sprite="cha_12"/>
+		
+        <Enemy id="19" name="BIG pig" hp="800" atk="40" moving_type="1" moving_value="15" moving_speed="15" moving_delay="200" atk_type="1" weapon="40" shots = "3" atk_spd="100" target_delay="100" atk_range="50" exp="200" reward="200" hp_reward="200" size="100" move_ability="none" shoot_ability="cone" sprite="cha_1112"/>
+
+        
+        <Enemy id="20" name="snake" hp="60" atk="20" moving_type="1" moving_value="10" moving_speed="10" moving_delay="100" atk_type="0" weapon="0" shots = "1" atk_spd="100" target_delay="200" atk_range="15" exp="15" reward="25" hp_reward="3" size="100" move_ability="none" shoot_ability="none" sprite="cha_6"/>
+        <Enemy id="21" name="snake" hp="60" atk="40" moving_type="1" moving_value="14" moving_speed="13" moving_delay="90" atk_type="0" weapon="0" shots = "1" atk_spd="100" target_delay="200" atk_range="15" exp="25" reward="35" hp_reward="6" size="100" move_ability="sneak" shoot_ability="none" sprite="cha_6"/>
+        <Enemy id="22" name="snake" hp="80" atk="60" moving_type="1" moving_value="18" moving_speed="16" moving_delay="80" atk_type="0" weapon="0" shots = "1" atk_spd="100" target_delay="200" atk_range="15" exp="35" reward="45" hp_reward="9" size="100" move_ability="sneak" shoot_ability="none" sprite="cha_6"/>
+       
+        <Enemy id="23" name="snake" hp="70" atk="10" moving_type="0" moving_value="0" moving_speed="0" moving_delay="0" atk_type="1" weapon="5" shots = "1" atk_spd="100" target_delay="200" atk_range="50" exp="40" reward="25" hp_reward="100" size="100" move_ability="none" shoot_ability="none" sprite="cha_1106"/>
+
+        
+        <Enemy id="30" name="mouse" hp="60" atk="30" moving_type="2" moving_value="15" moving_speed="18" moving_delay="0" atk_type="0" weapon="0" shots = "1" atk_spd="100" target_delay="150" atk_range="50" exp="15" reward="25" hp_reward="3" size="100" move_ability="none" shoot_ability="none" sprite="cha_1"/>
+        <Enemy id="31" name="mouse" hp="30" atk="15" moving_type="3" moving_value="25" moving_speed="20" moving_delay="150" atk_type="0" weapon="0" shots = "1" atk_spd="200" target_delay="100" atk_range="50" exp="20" reward="35" hp_reward="6" size="200" move_ability="none" shoot_ability="none" sprite="cha_1"/>        
+        <Enemy id="32" name="mouse" hp="30" atk="15" moving_type="4" moving_value="25" moving_speed="20" moving_delay="150" atk_type="0" weapon="0" shots = "1" atk_spd="200" target_delay="100" atk_range="50" exp="20" reward="35" hp_reward="6" size="200" move_ability="none" shoot_ability="none" sprite="cha_1"/>
+        <Enemy id="33" name="mouse" hp="80" atk="10" moving_type="0" moving_value="0" moving_speed="0" moving_delay="0" atk_type="1" weapon="6" shots = "1" atk_spd="100" target_delay="200" atk_range="50" exp="40" reward="25" hp_reward="100" size="100" move_ability="none" shoot_ability="none" sprite="cha_1"/>
+
+		<Enemy id="40" name="dog" hp="100" atk="20" moving_type="2" moving_value="10" moving_speed="5" moving_delay="150" atk_type="0" weapon="100" shots = "1" atk_spd="200" target_delay="100" atk_range="8" exp="20" reward="30" hp_reward="5" size="200" move_ability="none" shoot_ability="none" sprite="cha_11"/>
+        
+        <Enemy id="200" name="spikes" hp="10" atk="10" moving_type="0" moving_value="0" moving_speed="0" moving_delay="0" atk_type="0" weapon="0" shots = "1" atk_spd="0" target_delay="100" atk_range="0" exp="0" reward="0" hp_reward="0" size="0" move_ability="none" shoot_ability="none" sprite="spikes"/>
+        <Enemy id="210" name="fence" hp="10" atk="0" moving_type="0" moving_value="0" moving_speed="0" moving_delay="0" atk_type="0" weapon="0" shots = "1" atk_spd="0" target_delay="100" atk_range="0" exp="0" reward="0" hp_reward="0" size="0" move_ability="none" shoot_ability="none" sprite="fence"/>
+
+        
+    </Enemies>
+</EnemyData>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--explanation of columns
+
+-->
+<LevelData>
+	<Levels>
+        <Level id="0" level_length = "714" mobs_list = "" present_store = "0" />
+        <Level id="1" level_length = "714" mobs_list = "1,1,2,1,1" present_store = "0" />
+        <Level id="2" level_length = "714" mobs_list = "1,1,2,1,1" present_store = "0" />
+        <Level id="3" level_length = "714" mobs_list = "1,1,2,1,1" show_store = "0" />
+	</Levels>
+</LevelData>

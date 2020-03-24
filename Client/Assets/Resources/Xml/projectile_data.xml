@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<!--explanation of columns
+ID = enemy character ID
+sprite = resource's file name
+speed = moving speed
+pattern = projectile pattern module
+                  none = 1) moving in straight line, 2) when target hit, it causes damage to target
+                  cannon = 1) it explodes after it flies to the target, 2) before the explosion, it can't cause any damage to player (just pass)
+                  boomerang = 1) it can come back after it flies to attack range, 2) it's not disappeared when it hits player, 3) it can cause damage to player twice time when it flies and come back, 4) when it hits wall, then it get disappeared
+                  ※ after number 4), it'll be added later
+add_pattern = addtional pattern module.
+wall_passage = being capable to penetrate walls. 0 = false (it can't pass the wall), 1 = true (it can pass the wall)
+
+-->
+<WeaponData>
+	<Weapons>
+        <Weapon id="0" show_store = "1" name = "Laser i" sprite="laser1" speed="28" dmg_mod = "1" pattern="laser" add_pattern="none" wall_passage="0" purchase_cost = "0"/>
+        <Weapon id="1" show_store = "1" name = "Laser ii" sprite="laser1" speed="28" dmg_mod = "2" pattern="laser" add_pattern="none" wall_passage="0" purchase_cost = "500"/>
+		<Weapon id="2" show_store = "1" name = "Laser iii" sprite="laser2" speed="28" dmg_mod = "8" pattern="laser" add_pattern="none" wall_passage="1" purchase_cost = "750"/>
+		<Weapon id="3" show_store = "0" name = "Laser iv" sprite="laser3" speed="28" dmg_mod = "14" pattern="laser" add_pattern="none" wall_passage="1" purchase_cost = "1000"/>
+                
+        <Weapon id="20" show_store = "1" name = "missile i" sprite="missile1" speed="20" dmg_mod = "4" pattern="cannon" add_pattern="none" wall_passage="0" purchase_cost = "1000"/>
+		<Weapon id="21" show_store = "1" name = "missile ii" sprite="missile2" speed="22" dmg_mod = "5" pattern="cannon" add_pattern="crossed" wall_passage="0" purchase_cost = "1500"/>
+        <Weapon id="22" show_store = "0" name = "missile iii" sprite="missile3" speed="24" dmg_mod = "5" pattern="cannon" add_pattern="crossed" wall_passage="0" purchase_cost = "2000"/>
+        
+        <Weapon id="30" show_store = "1" name = "boomerang" sprite="boomerang1" speed="20" dmg_mod = "5" pattern="boomerang" add_pattern="none" wall_passage="0" purchase_cost = "3000"/>
+        
+        <Weapon id="40" show_store = "1" name = "stone" sprite="stone1" speed="18" dmg_mod = "4" pattern="cone" add_pattern="none" wall_passage="0" purchase_cost = "3000"/>
+        
+        <Weapon id="50" show_store = "0" name = "fireball" sprite="fireball1" speed="18" dmg_mod = "30" pattern="cone" add_pattern="none" wall_passage="0" purchase_cost = "5000"/>
+        
+        <Weapon id="100" show_store = "0" name = "blank" sprite="blank" speed="18" dmg_mod = "0" pattern="none" add_pattern="none" wall_passage="0" purchase_cost = "5000"/>
+
+	</Weapons>
+</WeaponData>

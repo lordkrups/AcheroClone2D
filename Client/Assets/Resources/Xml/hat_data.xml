@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!--explanation of columns
+All values in this table 'add' to the player's stats except for attack speed(lower is faster)
+
+heal percentage is 10% by default
+
+-->
+
+<HatData>
+	<Hats>
+        <Hat id="0" name= "remove hat" sprite= " " gear_type=" " power_desc = "" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" purchase_cost = "0"/>
+        <Hat id="1" name= "sombrero" sprite= "hat_1" gear_type="hat" power_desc = "Attack power increased" atk_inc="20" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="0" purchase_cost = "500"/>
+        <Hat id="2" name= "cone hat" sprite= "hat_2" gear_type="hat" power_desc = "Attack speed increased" atk_inc="0" atk_spd_inc = "10" crit_inc="0" hp_inc="0" heal_perc="0" purchase_cost = "500"/>
+        <Hat id="3" name= "pirate hat" sprite= "hat_3" gear_type="hat" power_desc = "Crit % increased" atk_inc="0" atk_spd_inc = "0" crit_inc="10" hp_inc="0" heal_perc="0" purchase_cost = "1500"/>
+        <Hat id="4" name= "cloud hat" sprite= "hat_4" gear_type="hat" power_desc = "Max health increased" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="100" heal_perc="0" purchase_cost = "2500"/>
+        <Hat id="5" name= "mario hat" sprite= "hat_5" gear_type="hat" power_desc = "Heal % increased" atk_inc="0" atk_spd_inc = "0" crit_inc="0" hp_inc="0" heal_perc="10" purchase_cost = "5000"/>
+	</Hats>
+</HatData>
+ 

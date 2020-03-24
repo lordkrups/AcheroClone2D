@@ -1,0 +1,83 @@
+﻿<?xml version="1.0"?>
+<!--explanation of columns
+ID = enemy character ID
+sprite = resource's file name
+speed = moving speed
+pattern = projectile pattern module
+                  none = 1) moving in straight line, 2) when target hit, it causes damage to target
+                  cannon = 1) it explodes after it flies to the target, 2) before the explosion, it can't cause any damage to player (just pass)
+                  boomerang = 1) it can come back after it flies to attack range, 2) it's not disappeared when it hits player, 3) it can cause damage to player twice time when it flies and come back, 4) when it hits wall, then it get disappeared
+                  ※ after number 4), it'll be added later
+add_pattern = addtional pattern module.
+wall_passage = being capable to penetrate walls. 0 = false (it can't pass the wall), 1 = true (it can pass the wall)
+
+-->
+<PlayerData>
+	<Players>
+		<Player id="0" name ="mouse god" sprite="cha_1" experience_points="1" base_weapon="50" base_health="150" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1.5" attack_speed="1.2" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="100" description = "The best mouse in the world, fast and never scared to bite an enemy!"/>
+        <Player id="1" name ="cow god" sprite="cha_2" experience_points="1" base_weapon="1" base_health="500" base_attack="5" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1.2" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="250" description = "The cow god says moo and turns enemies in to cheese with her powerful attacks!"/>
+        <Player id="2" name ="tiger god" sprite="cha_3" experience_points="1" base_weapon="20" base_health="250" base_attack="15" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="500" description = "the tiger god has sharp teeth and large claws enemies beware!"/>
+        <Player id="3" name ="rabbit god" sprite="cha_4" experience_points="1" base_weapon="40" base_health="250" base_attack="8" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="0.9" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="750" description = "the rabbit god maybe cute but his ears can hear the fear in enemies!"/>
+        <Player id="4" name ="dragon god" sprite="cha_5" experience_points="1" base_weapon="50" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="1000" description = "The powerful flying dragon of doom. shoots fireballs and eats the hearts of his enemies for breakfast!!"/>
+        <Player id="5" name ="snake god" sprite="cha_6" experience_points="1" base_weapon="1" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="1500" description = "slithering in to the souls of enemies to take a bit the snake god is a doom bringer!"/>
+        <Player id="6" name ="horse god" sprite="cha_7" experience_points="1" base_weapon="2" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1.5" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="2000" description = "the horse god tramples his enemies with hoof power!"/>
+        <Player id="7" name ="sheep god" sprite="cha_8" experience_points="1" base_weapon="40" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="2500" description = "the sheep god is no lay about, she is soft on the inside and tough as steel wool on the outside !"/>
+        <Player id="8" name ="monkey god" sprite="cha_9" experience_points="1" base_weapon="40" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="3000" description = "swinging through the branches the monkey god will drop bananas of death on all that stand in his way!"/>
+        <Player id="9" name ="chicken god" sprite="cha_10" experience_points="1" base_weapon="3" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="3500"/>
+        <Player id="10" name ="dog god" sprite="cha_11" experience_points="1" base_weapon="30" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="4000" description = "sniffing out enemies the dog god will take a bite out of any threat!"/>
+        <Player id="11" name ="pig god" sprite="cha_12" experience_points="1" base_weapon="40" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="4500" description = "he maybe made of bacon but the pig god leaves enemies crispy!"/>
+        <Player id="12" name ="cat god" sprite="cha_13" experience_points="30" base_weapon="40" base_health="250" base_attack="10" crit_hit_rate="0" 
+                crit_hit_dmg_percentage ="10" move_speed="1" attack_speed="1" attack_range="5" range_dmg_red="0" 
+                collide_dmg_red="0" crit_red="0" range_red="0" base_heal_perc="1" no_of_levels ="11" 
+                level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600"
+                purchase_cost ="5000" description = "the cat god bats enemies around like a ball of wool!"/>
+	</Players>
+</PlayerData>

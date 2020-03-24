@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--explanation of columns
+All values in this table 'add' to the player's stats except for attack speed(lower is faster)
+
+heal percentage is 10% by default
+
+-->
+
+<SkillData>
+	<Skills>
+        <Skill id="0" multi_pick = "10" skill_name= "strength" sprite= "pu_max_hp_up" skill_desc = "Hp increased" atk_inc="0" atk_spd_inc = "0"  hp_inc="100" heal_perc="0" bulwark="1" enchance="0" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="1" multi_pick = "10" skill_name= "power" sprite= "pu_attack_up" skill_desc = "attack increased" atk_inc="1" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="1" enchance="0" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="2" multi_pick = "10" skill_name= "bulwark" sprite= "pu_invincible" skill_desc = "lowers damage taken" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="1" enchance="0" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="3" multi_pick = "10" skill_name= "recover" sprite= "pu_strong_heart" skill_desc = "heal more each time" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="10" bulwark="0" enchance="0" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="4" multi_pick = "10" skill_name= "inspire" sprite= "heart" skill_desc = "heal on level up" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="0" enchance="0" time_reward="0" inspire = "1" glory="0"/>
+        <Skill id="5" multi_pick = "10" skill_name= "agile" sprite= "pu_attack_speed_up" skill_desc = "increase attack speed" atk_inc="0" atk_spd_inc = "1"  hp_inc="0" heal_perc="0" bulwark="0" enchance="0" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="6" multi_pick = "10" skill_name= "time reward" sprite= "skill_time_reward" skill_desc = "increase timed rewards" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="0" enchance="0" time_reward="1" inspire = "0" glory="0"/>
+        <Skill id="7" multi_pick = "10" skill_name= "enhance" sprite= "icon_main_icon_7" skill_desc = "increase effect of all gear" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="0" enchance="1" time_reward="0" inspire = "0" glory="0"/>
+        <Skill id="8" multi_pick = "1" skill_name= "glory" sprite= "firstcube" skill_desc = "get a free skill at game start" atk_inc="0" atk_spd_inc = "0"  hp_inc="0" heal_perc="0" bulwark="0" enchance="0" time_reward="0" inspire = "0" glory="1"/>
+	</Skills> 
+</SkillData>
+ 

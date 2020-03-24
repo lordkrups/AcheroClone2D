@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--explanation of columns
+All values in this table 'add' to the player's stats except for attack speed(lower is faster)
+
+heal percentage is 10% by default
+
+-->
+
+<GameStats>
+	<GameStat>
+        <Game id="0" play_cost='5' regen_energy_time='600' regen_energy_amount='1' coin_reward_time='60' 
+               coin_reward_amount='1' level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600,7700,8800,9900,11000"/>
+        <Game id="1" play_cost='5' regen_energy_time='600' regen_energy_amount='1' coin_reward_time='60' 
+               coin_reward_amount='1' level_up_experience ="0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600,7700,8800,9900,11000"/>
+	</GameStat> 
+</GameStats>
+ 
